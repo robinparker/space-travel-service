@@ -12,7 +12,7 @@ const router = govukPrototypeKit.requests.setupRouter()
 router.post('/destination-branch', function (req, res) {
     let destination = req.session.data['destination']
   
-    if (destination == 'moon') {
+    if (destination == 'Moon') {
       res.redirect(`/name_moon`)
     }
     else {

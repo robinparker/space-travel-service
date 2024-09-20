@@ -23,6 +23,24 @@
 
       {{ govukSummaryList({
         rows: [
+        {
+          key: {
+            text: "Destination"
+          },
+          value: {
+            text: data['destination']
+          },
+          actions: {
+            items: [
+              {
+                href: "#",
+                text: "Change",
+                visuallyHiddenText: "Destination"
+              }
+            ]
+          }
+        }
+        ,        
           {
             key: {
               text: "Full name"
