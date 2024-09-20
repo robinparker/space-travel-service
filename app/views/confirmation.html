@@ -1,0 +1,30 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+{{ serviceName }} – Application complete
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {{ govukPanel({
+        titleText: "Application complete",
+        html: "Your reference number<br><strong>HDJ2123F</strong>"
+      }) }}
+
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-8">
+        What happens next
+      </h2>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget enim nunc. Aliquam neque urna, cursus vitae ligula at, placerat elementum tellus. Curabitur tristique eu dolor id ornare. In congue fringilla ante, eget semper eros imperdiet nec. Nulla molestie libero sapien, quis aliquet nisi bibendum et.
+      </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
